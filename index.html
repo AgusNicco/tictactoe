@@ -1,16 +1,71 @@
 <!DOCTYPE html>
 <html>
-    <head> 
-        <title>TicTacToe</title>
-        <script> src = "./script.js" </script>
-    </head>
-    
-    <body>
-        <section id = "heading">
-            <div id = "title">
-                <p>TicTacToe!</p>
-            </div>
-        </section>
 
-    </body>
+<head>
+    <title>TicTacToe</title>
+    <script src="./script.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <section id="heading">
+        <div id="title">
+            <p>TicTacToe!</p>
+        </div>
+    </section>
+    <section id="game">
+        <div id="ins">
+            <p id="instructions" onclick="Game.start()">
+                Click to begin a game.
+            </p>
+        </div>
+        <table id="board">
+            <tr>
+                <td id="1" onclick="Game.makeMove(0,0,1)">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/9/98/Blank_button.svg/1200px-Blank_button.svg.png"
+                        width="15" height="15">
+                </td>
+                <td id="2" onclick="Game.makeMove(1,0,2)">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/9/98/Blank_button.svg/1200px-Blank_button.svg.png"
+                        width="15" height="15">
+                </td>
+                <td id="3" onclick="Game.makeMove(2,0,3)">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/9/98/Blank_button.svg/1200px-Blank_button.svg.png"
+                        width="15" height="15">
+                </td>
+            </tr>
+            <tr>
+                <td id="4" onclick="Game.makeMove(0,1,4)">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/9/98/Blank_button.svg/1200px-Blank_button.svg.png"
+                        width="15" height="15">
+                </td>
+                <td id="5" onclick="Game.makeMove(1,1,5)">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/9/98/Blank_button.svg/1200px-Blank_button.svg.png"
+                        width="15" height="15">
+                </td>
+                <td id="6" onclick="Game.makeMove(2,1,6)">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/9/98/Blank_button.svg/1200px-Blank_button.svg.png"
+                        width="15" height="15">
+                </td>
+            </tr>
+            <tr>
+                <td id="7" onclick="Game.makeMove(0,2,7)">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/9/98/Blank_button.svg/1200px-Blank_button.svg.png"
+                        width="15" height="15">
+                </td>
+                <td id="8" onclick="Game.makeMove(1,2,8)">
+                </td>
+                <td id="9" onclick="Game.makeMove(2,2,9)">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/9/98/Blank_button.svg/1200px-Blank_button.svg.png"
+                        width="15" height="15">
+                </td>
+            </tr>
+        </table>
+        <br><br>
+        <div id="play_again" onclick="Game.reStart()">
+        </div>
+    </section>
+
+</body>
+
 </html>
